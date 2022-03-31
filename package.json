@@ -11,7 +11,7 @@
     "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
   },
   "scripts": {
-    "start": "set LOGGY_STACKS=1 && brunch watch --server"
+    "start": "brunch watch --server"
   },
   "dependencies": {
     "assetsmanager-brunch": "~1.8.1",
