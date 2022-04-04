@@ -159,7 +159,7 @@ App.WizardStep2Controller = Em.Controller.extend({
    */
   evaluateStep: function () {
     console.log('TRACE: Entering controller:WizardStep2:evaluateStep function');
-
+    
     if (this.get('isSubmitDisabled')) {
       return false;
     }

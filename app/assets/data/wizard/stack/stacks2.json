@@ -4,13 +4,7 @@
     {
       "href" : "http://dev.hortonworks.com:8080/api/v1/stacks2/HDP",
       "Stacks" : {
-        "stack_name" : "HDP"
-      }
-    },
-    {
-      "href" : "http://dev.hortonworks.com:8080/api/v1/stacks2/HDPLocal",
-      "Stacks" : {
-        "stack_name" : "HDPLocal"
+        "stack_name" : "BIGTOP"
       }
     }
   ]

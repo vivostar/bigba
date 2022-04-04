@@ -604,7 +604,7 @@ var urls = {
   },
   'wizard.service_components': {
     'real': '{stackUrl}/stackServices?fields=StackServices',
-    'mock': '/data/wizard/stack/hdp/version/{stackVersion}.json',
+    'mock': '/data/wizard/stack/bigtop/version/{stackVersion}.json',
     'format': function (data, opt) {
       return {
         timeout: 10000,

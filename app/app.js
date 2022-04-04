@@ -53,7 +53,7 @@ module.exports = Em.Application.create({
   clusterName: null,
   currentStackVersion: '',
   currentStackVersionNumber: function(){
-    return this.get('currentStackVersion').replace(/HDP(Local)?-/, '');
+    return this.get('currentStackVersion').replace(/BIGTOP(Local)?-/, '');
   }.property('currentStackVersion')
 });
 
