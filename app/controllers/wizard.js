@@ -453,8 +453,6 @@ App.WizardController = Em.Controller.extend({
    * called form stepController step4WizardController
    */
   loadServiceComponents: function () {
-    console.log("************************");
-    console.log("************************");
     App.ajax.send({
       name: 'wizard.service_components',
       sender: this,

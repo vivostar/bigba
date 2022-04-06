@@ -45,10 +45,10 @@ module.exports = Em.Application.create({
    */
   stack2VersionURL:function(){
     var stackVersion = this.get('currentStackVersion') || this.get('defaultStackVersion');
-    if(stackVersion.indexOf('HDPLocal') !== -1){
-      return '/stacks2/HDPLocal/versions/' + stackVersion.replace(/HDPLocal-/g, '');
+    if(stackVersion.indexOf('BIGTOPLocal') !== -1){
+      return '/stacks2/BIGTOPLocal/versions/' + stackVersion.replace(/BIGTOPLocal-/g, '');
     }
-    return '/stacks2/HDP/versions/' + stackVersion.replace(/HDP-/g, '');
+    return '/stacks2/BIGTOP/versions/' + stackVersion.replace(/BIGTOP-/g, '');
   }.property('currentStackVersion'),
   clusterName: null,
   currentStackVersion: '',

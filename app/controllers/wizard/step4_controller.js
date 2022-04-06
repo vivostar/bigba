@@ -116,16 +116,18 @@ App.WizardStep4Controller = Em.ArrayController.extend({
   /**
    * Check do we have any monitoring service turned on
    * @return {Boolean}
-   */
+   *
   gangliaOrNagiosNotSelected: function () {
     return (this.findProperty('serviceName', 'GANGLIA').get('isSelected') === false || this.findProperty('serviceName', 'NAGIOS').get('isSelected') === false);
   },
+  /
 
   /**
    * Check whether user turned on monitoring service and go to next step
    */
   validateMonitoring: function () {
-    if (this.gangliaOrNagiosNotSelected()) {
+    // TODO certainly skip monitor check for simple
+    if (1) {
       this.monitoringCheckPopup();
     } else {
       App.router.send('next');
